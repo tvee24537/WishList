@@ -1,4 +1,3 @@
-
 import React from 'react';
 import GiftInput from '../components/GiftInput';
 import GiftsList from '../components/GiftsList';
