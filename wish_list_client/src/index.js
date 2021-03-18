@@ -9,6 +9,7 @@ import './index.css';
 import App from './App';
 import './App.css';
 
+const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 
 // Create store
 // Use applyMiddleware to enable thunk
