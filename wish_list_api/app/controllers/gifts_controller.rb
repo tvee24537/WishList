@@ -33,7 +33,7 @@ class GiftsController < ApplicationController
 
   private
     # Use callbacks to share common setup or constraints between actions.
-    def set_gift
+    def set_destination
       unless @destination = Destination.where(id: params[:destination_id]).first
         redirect_to destinations_path, flash: {alert: "Destination doesn't exists"}
       end
