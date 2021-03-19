@@ -8,7 +8,7 @@ const DestinationsList = props => {
     <div className='DestinationContainer'>
       <Link to='/destinations/new' className='NewDestinationButton' role='button'>Add A New Destination</Link>
 
-    <h3>Your Destinations</h3>
+    <h3 style={{color: 'white', fontWeight: '750', borderStyle: 'double', margin: '20px' }}>Your Destinations</h3>
       {props.destinations.map(destination =>
         <Link key={destination.id} to={`/destinations/${destination.id}`}>
           <Card className = 'DestinationCard'>

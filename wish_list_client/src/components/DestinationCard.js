@@ -19,7 +19,6 @@ class DestinationCard extends React.Component {
         .catch(error => console.log('d', error))
         console.log('e')
 
-      // 'a', 'e', 'd'
     }
 
     render () {

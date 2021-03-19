@@ -12,10 +12,10 @@ const GiftsList = props => {
 
   return (
     <div className='GiftsList'>
-      {props.gifts && props.gifts.length === 0 ? <h6>There aren't any gifts for this person yet</h6> : <h5>Below are some example gift ideas for this person.</h5>}
+      {props.gifts && props.gifts.length === 0 ? <h6>There aren't any gifts for this person yet.</h6> : <h5>Below are some gift ideas for this person.</h5>}
       <ListGroup>
         {props.gifts && props.gifts.map(gift =>
-          <ListGroupItem style={{fontSize: 'xx-large' }} key={gift.id}>{gift.title}   <Button style={{backgroundColor: 'black'}}onClick={() => handleDelete(gift)} className='DeleteButton'>Delete This Gift</Button></ListGroupItem>
+          <ListGroupItem style={{fontSize: 'xx-large' }} key={gift.id}>{gift.title}   <Button style={{backgroundColor: 'white'}}onClick={() => handleDelete(gift)} className='DeleteButton'>Delete This Gift</Button></ListGroupItem>
         )}
       </ListGroup>
     </div>

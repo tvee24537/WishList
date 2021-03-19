@@ -1,7 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import { Card, CardBody, CardTitle, CardImg, Button } from 'reactstrap';
-import Activities from '../containers/Activities';
+import Gifts from '../containers/Gifts';
 import { deleteDestination, toggleGranted, toggleWaitList } from '../actions/destinationActions';
 
 
@@ -27,7 +27,7 @@ const DestinationShow = props => {
     <div>
       <Card className = 'DestinationShow'>
       <CardBody>
-          <CardTitle style={{border: 'dotted' }}>{destination && destination.name} - {destination && destination.country}</CardTitle>
+          <CardTitle style={{border: 'double' }}>{destination && destination.name} - {destination && destination.country}</CardTitle>
           <CardImg className='DestinationImage' src={destination && destination.image} alt={destination && destination.name} /><br></br><br></br>
         </CardBody>
         <Button onClick={handleGranted} className='GrantedButton' style={{alignItems: 'center' }}>
@@ -39,7 +39,7 @@ const DestinationShow = props => {
         <Button onClick={handleDelete} className='DeleteButton'>Delete This Destination</Button>
       </Card>
 
-      <Activities destination={destination} />
+      <Gifts destination={destination} />
     </div>
   );
 };
