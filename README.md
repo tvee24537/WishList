@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This project is a made to keep track of the gift ideas for friends and family. This is a tracker will let you add and delete destination where the gift will go to, image is optional. Under the existing destination, you can add and delete gift ideas. You can sort each destination in the granted or waitlist page with the button below the image. Within the api folder is the rails part which manages the database. Within the client folder is the javascript part that manages the display that you will see.
+This project is made to keep track of gift ideas for friends and family. This tracker will let you add and delete the destination where the gift will go, the image on the destination is optional. Under the existing destination, you can add and delete gift ideas. You can sort each destination in the granted or waitlist page with buttons below the destination card when you go into the destination. Within the API folder is the Ruby on Rails part which manages the database. Within the client folder is the JavaScript with React-Redux part that manages the frontend of the project.
 
 ## Technologies
 

@@ -20,7 +20,7 @@ class DestinationCard extends React.Component {
         console.log('e')
 
     }
-
+// render the card with image inside, in the destination page
     render () {
         let {destination} = this.props
         return (
