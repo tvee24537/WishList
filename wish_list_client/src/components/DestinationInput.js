@@ -10,7 +10,7 @@ class DestinationInput extends React.Component {
     country: '',
     image: ''
   };
-
+// when user inputs e.target.name value, it will then set state for that value
   handleChange = e => {
     this.setState({
       [e.target.name]: e.target.value
