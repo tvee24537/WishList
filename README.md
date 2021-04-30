@@ -22,7 +22,7 @@ Yarn
 
 Clone this repository
 
-Go into backend folder to set up rails server by cd backend
+Go into backend folder to set up rails server by cd wish_list_api
 
 Run bundle install for Rails
 
@@ -33,6 +33,8 @@ Run rails s
 Make sure that the Rails server is up
 
 Open another terminal
+
+Go into frontend folder to set up start up npm by cd wish_list_client
 
 Run npm start
 
