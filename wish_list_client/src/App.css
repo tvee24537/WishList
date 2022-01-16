@@ -158,7 +158,7 @@
 }
 
 .DestinationForm button {
-  color: #ffffff;
+  color: #000000;
   background-color: rgb(255, 230, 0);
 }
 
@@ -189,6 +189,11 @@ padding-bottom: 10px;
   font-family: 'Roboto', sans-serif;
   font-weight: 700;
   font-size: xx-large;
+}
+
+.GiftsList ul{
+  list-style-type: none;
+  padding-inline-start: 0;
 }
 
 .GiftForm button {
