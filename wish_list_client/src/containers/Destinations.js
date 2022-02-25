@@ -14,7 +14,7 @@ class Destinations extends React.Component {
   componentDidMount() {
     this.props.fetchDestinations()
   }
-    // using switch to render only the first route that matches the path, if path doesn't match, goes to :id, if none matches id from the destination array, renders blanks
+
     render() {
         return (
           <div>

@@ -1,10 +1,10 @@
 // fetch all destinations 
 export const fetchDestinations = () => {
     return (dispatch) => {
-      fetch('http://localhost:3000/destinations') //returns promise of res, a resolved value of the promise
-      .then(res => res.json()) //then using res as argument to the callback, returns promise which will be use for the next asynchronus callback
+      fetch('http://localhost:3000/destinations')
+      .then(res => res.json())
       .then(destinations => {
-          dispatch({ //res.json = destinations
+          dispatch({
             type: 'FETCH_DESTINATIONS',
             payload: destinations
           })
@@ -61,17 +61,17 @@ export const toggleGranted = (destination, destinationId) => {
   // add destination to waitlist with fetch
 export const toggleWaitList = (destination, destinationId) => {
     console.log (destination.wait_list)
-    const updatedWaitList = {...destination, wait_list: !destination.wait_list}; // updatedWaitList is new destination, switching defualt false to true, vice vesa when toggle again
+    const updatedWaitList = {...destination, wait_list: !destination.wait_list};
     console.log (updatedWaitList.wait_list)
-    return (dispatch) => { // updating database, sending dispatch to reducer
+    return (dispatch) => {
       fetch(`http://localhost:3000/destinations/${destinationId}`, {
         method: 'PATCH',
         headers: {'Content-Type': 'application/json'},
         body: JSON.stringify({destination: updatedWaitList})
       })
-      .then(res => res.json()) // converting respond to json
+      .then(res => res.json())
       .then(destination => {
-        dispatch({type: 'TOGGLE_WAIT_LIST', payload: destination}) // dispatch togglewaitlist reducer 
+        dispatch({type: 'TOGGLE_WAIT_LIST', payload: destination})
       })
     };
 };

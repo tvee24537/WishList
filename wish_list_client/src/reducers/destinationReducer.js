@@ -14,7 +14,7 @@ const destinationReducer = (state = { destinations: []}, action) => {
   
       case 'TOGGLE_GRANTED':
       case 'TOGGLE_WAIT_LIST':
-        const destination = state.destinations.map(destination => { // check and updating destination that is being viewed
+        const destination = state.destinations.map(destination => {
           if (destination.id !== action.payload.id) {
             return destination
           } else {

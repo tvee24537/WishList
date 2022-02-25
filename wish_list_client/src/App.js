@@ -6,7 +6,7 @@ import Home from './components/Home';
 
 class App extends React.Component {
 
-  render() { // every react component always returns html
+  render() {
     return (
       <div className='App'>
         <NavBar />

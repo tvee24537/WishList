@@ -12,11 +12,8 @@ import './App.css';
 
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 
-// Create store
-// Use applyMiddleware to enable thunk
 let store = createStore(destinationReducer, composeEnhancers(applyMiddleware(thunk)));
 
-// Wrap entire app in provider to give all components access to the store
 ReactDOM.render(
   <Provider store = { store }>
     <Router>

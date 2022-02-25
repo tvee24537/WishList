@@ -6,14 +6,14 @@ import { addGift } from '../actions/giftActions';
 class GiftInput extends React.Component {
 
   state = {
-    title: ''
-  };
+    title: '',
+  }
 
   handleChange = e => {
     this.setState({
       [e.target.name]: e.target.value
     });
-  };
+  }
 
   handleSubmit = e => {
     e.preventDefault();
@@ -21,10 +21,11 @@ class GiftInput extends React.Component {
     this.setState({
       title: ''
     });
-  };
+  }
 
   render() {
     return (
+        
       <div className='GiftForm'>
         <Form onSubmit={this.handleSubmit}>
           
